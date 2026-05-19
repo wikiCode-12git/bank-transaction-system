@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Welcome, <span id="user"></span></h1>
+
+    <h2>Balance: ₦<span id="balance">0</span></h2>
+
+    <input type="number" id="amount" placeholder="Enter amount">
+
+    <div class="buttons">
+        <button onclick="deposit()">Deposit</button>
+        <button onclick="withdraw()">Withdraw</button>
+        <button onclick="transfer()">Transfer</button>
+    </div>
+
+    <button onclick="logout()">Logout</button>
+
+    <h3>Transaction History</h3>
+    <ul id="history"></ul>
+</div>
+
+<script src="JavaScript/script.js"></script>
+</body>
+</html>
